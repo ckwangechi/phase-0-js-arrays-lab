@@ -9,13 +9,14 @@ function logFirstProduct() {
 }
 
 // Add a product
-function addProduct() {
-  console.log(productName);
+function addProduct(productName) {
+  products.push (productName);
+
 }
 
 // Update product information
-function updateProductName() {
-  products.push(productName);
+function updateProductName(index, productName) {
+  products[index] = productName;
 }
 
 // Remove a product
